@@ -85,7 +85,7 @@ server.listen(PORT);
 let allConnections = new Set();
 
 // connect to the Arduino using a "serial port"
-let serial = new SerialPort('/dev/ttyACM0', {baudRate: 115200});
+let serial = new SerialPort('/dev/cu.usbmodem146101', {baudRate: 115200});
 
 // if there's an error, quit the server.
 serial.on('error', () => {
